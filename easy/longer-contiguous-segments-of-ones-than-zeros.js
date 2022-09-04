@@ -5,23 +5,18 @@
  * @return {boolean}
  */
 var checkZeroOnes = function (s) {
-  const lengthOne = new Set(s.split("0"));
-  const lengthZero = new Set(s.split("1"));
-  console.log("lengthOne", lengthOne);
-  console.log("lengthZero", lengthZero);
+  const setOne = new Set(s.split("0"));
+  const setZero = new Set(s.split("1"));
 
-  console.log("...lengthOne", [...lengthOne]);
-
-  const maxOne = Math.max(...Array.from(lengthOne).map((item) => item.length));
-  const maxZero = Math.max(
-    ...Array.from(lengthZero).map((item) => item.length)
-  );
-
-  console.log("maxOne", maxOne);
-  console.log("maxZero", maxZero);
+  const maxOne = getMax(setOne);
+  const maxZero = getMax(setZero);
 
   return maxOne > maxZero;
 };
+
+function getMax(set) {
+  return Math.max(...Array.from(set).map((item) => item.length));
+}
 
 // console.log(checkZeroOnes(""));
 // console.log(checkZeroOnes("111111"));
