@@ -1,4 +1,4 @@
-// https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+removeDuplicates; // https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 /**
  * @param {number[]} nums
