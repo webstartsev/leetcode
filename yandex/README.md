@@ -6,8 +6,8 @@
 const fs = require("fs");
 let fileContent = fs.readFileSync("input.txt", "utf8");
 
-const n = fileContent.toString();
-const result = fn(n);
+const content = fileContent.toString();
+const result = fn(content);
 
 fs.writeFileSync("output.txt", result.toString());
 ```
