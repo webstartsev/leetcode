@@ -1,0 +1,9 @@
+// Вычислить y = ax^2 + bx + c
+// на вход a, x, b, c
+
+function calc(a, x, b, c) {
+    return (a * x**2) + (b * x) + c;
+}
+
+console.log(calc(-8, -5, -2, 7)); // -183
+console.log(calc(8, 2, 9, -10)); // 40

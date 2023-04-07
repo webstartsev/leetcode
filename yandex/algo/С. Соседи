@@ -1,0 +1,29 @@
+// Дана матрица и в ней нужно найти соседей числу которое передается по индексу
+
+function getNeighborhoods(n, m, matrix, i, j) {
+    const needIndexes =
+    for (let k = 0; k < matrix.length; k++) {
+
+    }
+}
+
+console.log(getNeighborhoods(
+    4, 3,
+    [
+        [1, 2, 3],
+        [0, 2, 6],
+        [7, 4, 1],
+        [2, 7, 0]
+    ],
+    3, 0
+)); // 7 7
+console.log(getNeighborhoods(
+    4, 3,
+    [
+        [1, 2, 3],
+        [0, 2, 6],
+        [7, 4, 1],
+        [2, 7, 0]
+    ],
+    0, 0
+)); // 0 2
